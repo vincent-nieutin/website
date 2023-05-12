@@ -1,0 +1,15 @@
+{
+    "professional-experiences": {
+        "openfly": {
+            "title": "Développeur Full Stack",
+            "company": "OpenFly",
+            "location": "Guipavas",
+            "startDate": "2021-10",
+            "endDate": null,
+            "description": [
+                "Maintenance et développement du site et de l'application de l'entreprise",
+                "Utilisation de GitLab, Laravel, VueJS, MySQL"
+            ]
+        }
+    }
+}
