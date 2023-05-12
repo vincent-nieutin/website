@@ -5,8 +5,8 @@ import Item from '../components/CV/Item.vue'
 
 <template>
   <div class="cv">
-    {{ $t('professional-experiences.openfly.title') }}
-    <Item v-for="item in items" :item="item" />
+    <!-- Proffession experience -->
+    <Item v-for="(item, index) in $i18n.messages[$i18n.locale]['professional-experiences']" :item="item" />
   </div>
 </template>
 
