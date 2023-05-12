@@ -11,8 +11,8 @@ const items = [
     startDate: '2021-10',
     endDate: null,
     description: [
-      'Maintenance et développement du site et de l’application de l’entreprise',
-      'Utilisation de GitLab, Laravel, VueJS, MySQL'
+      "Maintenance et développement du site et de l'application de l'entreprise",
+      "Utilisation de GitLab, Laravel, VueJS, MySQL"
     ]
   },
   {
@@ -23,8 +23,9 @@ const items = [
     startDate: '2018-05',
     endDate: '2018-08',
     description: [
-      'Maintenance et développement du site et de l’application de l’entreprise',
-      'Utilisation de GitLab, Laravel, VueJS, MySQL'
+      "Proof of Concept sur l'intégration d'un Hardware Security Module aux applications de l'entreprise afin de renforcer leur sécurité",
+      "Élaboration d'un système serveur/client et chiffrement des données échangées",
+      "Présentation du POC aux associés directeurs de l'entreprise"
     ]
   }
 ]
