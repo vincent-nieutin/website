@@ -5,7 +5,6 @@ import Item from '../components/CV/Item.vue'
 
 <template>
   <div class="cv">
-    <!-- Proffession experience -->
     <div v-for="(key, index) in Object.keys($i18n.messages[$i18n.locale])">
       <div class="category-title">{{ $i18n.messages[$i18n.locale][key].title.toUpperCase() }}</div>
       <Item v-for="(item, index) in $i18n.messages[$i18n.locale][key].content" :item="item" />

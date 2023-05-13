@@ -5,7 +5,7 @@ const props = defineProps({
 
 // Date
 props.item.startDate = new Date(props.item.startDate)
-props.item.endDate = !!props.item.endDate ? '' : new Date(props.item.endDate)
+props.item.endDate = !props.item.endDate ? '' : new Date(props.item.endDate)
 const dateFormat = { month: 'long', year: 'numeric' }
 </script>
 
@@ -17,7 +17,7 @@ const dateFormat = { month: 'long', year: 'numeric' }
         </div>
 
         <div class="item-date">
-            {{ item.startDate.toLocaleString('en-US', dateFormat) }} - {{ item.endDate.toLocaleString('en-US', dateFormat)
+            {{ item.startDate.toLocaleString('fr-FR', dateFormat) }} - {{ item.endDate.toLocaleString('fr-FR', dateFormat)
                 ?? "Aujourd'hui" }}
         </div>
 
@@ -72,5 +72,7 @@ const dateFormat = { month: 'long', year: 'numeric' }
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    margin-bottom: 30px;
 }
 </style>
