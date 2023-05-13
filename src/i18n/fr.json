@@ -53,6 +53,11 @@
                 "title": "Employé de marée",
                 "company": "Les Viviers Bretons",
                 "location": "Plouguerneau",
+                "multiDates": {
+                    "0": ["2019-07", "2019-08"],
+                    "1": ["2020-07", "2020-08"],
+                    "2": ["2021-07", "2021-08"]
+                },
                 "startDate": "2019-07",
                 "endDate": "2019-08",
                 "description": [

@@ -4,9 +4,26 @@ const props = defineProps({
 })
 
 // Date
-props.item.startDate = new Date(props.item.startDate)
-props.item.endDate = !props.item.endDate ? '' : new Date(props.item.endDate)
 const dateFormat = { month: 'long', year: 'numeric' }
+const dateRegion = 'fr-FR'
+let startDate = new Date(props.item.startDate)
+let endDate = !!props.item.endDate ? new Date(props.item.endDate) : ''
+let itemDate = ''
+
+if (startDate == endDate) {
+    itemDate = startDate.toLocaleString(dateRegion, dateFormat)
+} else if (startDate.getFullYear() == endDate.getFullYear()) {
+    itemDate = startDate.toLocaleString(dateRegion, dateFormat)
+        .concat(" - ")
+        .concat(!endDate ? "Aujourd'hui" : endDate.toLocaleString(dateRegion, dateFormat))
+} else {
+    itemDate = startDate.toLocaleString(dateRegion, dateFormat)
+        .concat(" - ")
+        .concat(!endDate ? "Aujourd'hui" : endDate.toLocaleString(dateRegion, dateFormat))
+}
+
+// props.item.startDate = new Date(props.item.startDate).toLocaleString('fr-FR', dateFormat)
+// props.item.endDate = !props.item.endDate ? "Aujourd'hui" : new Date(props.item.endDate).toLocaleString('fr-FR', dateFormat)
 </script>
 
 <template>
@@ -17,8 +34,7 @@ const dateFormat = { month: 'long', year: 'numeric' }
         </div>
 
         <div class="item-date">
-            {{ item.startDate.toLocaleString('fr-FR', dateFormat) }} - {{ item.endDate.toLocaleString('fr-FR', dateFormat)
-                ?? "Aujourd'hui" }}
+            {{ itemDate }}
         </div>
 
         <div class="item-description">
