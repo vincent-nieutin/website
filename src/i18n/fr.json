@@ -1,29 +1,64 @@
 {
-    "hello": "Hello there !",
     "professional-experiences": {
-        "openfly": {
-            "title": "Développeur Full Stack",
-            "company": "OpenFly",
-            "location": "Guipavas",
-            "startDate": "2021-10",
-            "endDate": null,
-            "description": [
-                "Maintenance et développement du site et de l'application de l'entreprise",
-                "Utilisation de GitLab, Laravel, VueJS, MySQL"
-            ]
-        },
-        "harvest": {
-            "type": "professional-experience",
-            "title": "Stage cybersécurité",
-            "company": "Harvest",
-            "location": "Paris",
-            "startDate": "2018-05",
-            "endDate": "2018-08",
-            "description": [
-                "Proof of Concept sur l'intégration d'un Hardware Security Module aux applications de l'entreprise afin de renforcer leur sécurité",
-                "Élaboration d'un système serveur/client et chiffrement des données échangées",
-                "Présentation du POC aux associés directeurs de l'entreprise"
-            ]
+        "title": "Expériences professionnelles",
+        "content": {
+            "openfly": {
+                "title": "Développeur Full Stack",
+                "company": "OpenFly",
+                "location": "Guipavas",
+                "startDate": "2021-10",
+                "endDate": null,
+                "description": [
+                    "Maintenance et développement du site et de l'application de l'entreprise",
+                    "Utilisation de GitLab, Laravel, VueJS, MySQL"
+                ]
+            },
+            "harvest": {
+                "title": "Stage cybersécurité",
+                "company": "Harvest",
+                "location": "Paris",
+                "startDate": "2018-05",
+                "endDate": "2018-08",
+                "description": [
+                    "Proof of Concept sur l'intégration d'un Hardware Security Module aux applications de l'entreprise afin de renforcer leur sécurité",
+                    "Élaboration d'un système serveur/client et chiffrement des données échangées",
+                    "Présentation du POC aux associés directeurs de l'entreprise"
+                ]
+            }
+        }
+    },
+    "degrees": {
+        "title": "Formations",
+        "content": {
+            "applied-computing": {
+                "title": "Bachelor de Sciences en Informatique Appliquée",
+                "company": "Université de Dundee",
+                "location": "Dundee",
+                "startDate": "2015-09",
+                "endDate": "2020-06",
+                "description": [
+                    "Agile Software Engineering",
+                    "Networks and Data Communication",
+                    "Information Security",
+                    "Human Computer Interaction",
+                    "Database Systems"
+                ]
+            }
+        }
+    },
+    "low-jobs": {
+        "title": "Emplois étudiants et saisonniers",
+        "content": {
+            "employe-maree": {
+                "title": "Employé de marée",
+                "company": "Les Viviers Bretons",
+                "location": "Plouguerneau",
+                "startDate": "2019-07",
+                "endDate": "2019-08",
+                "description": [
+                    "Responsable de la vente au détail"
+                ]
+            }
         }
     }
 }
