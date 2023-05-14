@@ -11,11 +11,18 @@ let endDate = !!props.item.endDate ? new Date(props.item.endDate) : ''
 let itemDate = ''
 
 if (startDate == endDate) {
-    itemDate = startDate.toLocaleString(dateRegion, dateFormat)
-} else if (startDate.getFullYear() == endDate.getFullYear()) {
-    itemDate = startDate.toLocaleString(dateRegion, dateFormat)
+    itemDate = startDate.toLocaleString(dateRegion, { month: 'long', year: 'numeric' })
+} else if (endDate == '') {
+    itemDate = startDate.toLocaleString(dateRegion, { month: 'long', year: 'numeric' })
         .concat(" - ")
-        .concat(!endDate ? "Aujourd'hui" : endDate.toLocaleString(dateRegion, dateFormat))
+        .concat("Aujourd'hui")
+} else if (startDate.getYear() == endDate.getYear()) {
+    itemDate = startDate.toLocaleString(dateRegion, { month: 'long' }).concat(
+        " - ",
+        endDate.toLocaleString(dateRegion, { month: 'long' }),
+        " ",
+        startDate.toLocaleString(dateRegion, { year: 'numeric' })
+    )
 } else {
     itemDate = startDate.toLocaleString(dateRegion, dateFormat)
         .concat(" - ")
