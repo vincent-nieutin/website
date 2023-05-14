@@ -6,31 +6,40 @@ const props = defineProps({
 // Date
 const dateFormat = { month: 'long', year: 'numeric' }
 const dateRegion = 'fr-FR'
-let startDate = new Date(props.item.startDate)
-let endDate = !!props.item.endDate ? new Date(props.item.endDate) : ''
 let itemDate = ''
+let dates = props.item.dates
 
-if (startDate == endDate) {
-    itemDate = startDate.toLocaleString(dateRegion, { month: 'long', year: 'numeric' })
-} else if (endDate == '') {
-    itemDate = startDate.toLocaleString(dateRegion, { month: 'long', year: 'numeric' })
-        .concat(" - ")
-        .concat("Aujourd'hui")
-} else if (startDate.getYear() == endDate.getYear()) {
-    itemDate = startDate.toLocaleString(dateRegion, { month: 'long' }).concat(
-        " - ",
-        endDate.toLocaleString(dateRegion, { month: 'long' }),
-        " ",
-        startDate.toLocaleString(dateRegion, { year: 'numeric' })
-    )
-} else {
-    itemDate = startDate.toLocaleString(dateRegion, dateFormat)
-        .concat(" - ")
-        .concat(!endDate ? "Aujourd'hui" : endDate.toLocaleString(dateRegion, dateFormat))
-}
+Object.keys(dates).forEach((key, index) => {
+    let startDate = new Date(dates[key].start)
+    let endDate = !!dates[key].end ? new Date(dates[key].end) : ''
 
-// props.item.startDate = new Date(props.item.startDate).toLocaleString('fr-FR', dateFormat)
-// props.item.endDate = !props.item.endDate ? "Aujourd'hui" : new Date(props.item.endDate).toLocaleString('fr-FR', dateFormat)
+    if (startDate == endDate) {
+        itemDate = itemDate.concat(startDate.toLocaleString(dateRegion, { month: 'long', year: 'numeric' }))
+    } else if (endDate == '') {
+        itemDate = itemDate.concat(
+            startDate.toLocaleString(dateRegion, { month: 'long', year: 'numeric' }),
+            " - ",
+            "Aujourd'hui"
+        )
+    } else if (startDate.getYear() == endDate.getYear()) {
+        itemDate = itemDate.concat(
+            startDate.toLocaleString(dateRegion, { month: 'long' }),
+            " - ",
+            endDate.toLocaleString(dateRegion, { month: 'long' }),
+            " ",
+            startDate.toLocaleString(dateRegion, { year: 'numeric' })
+        )
+    } else {
+        itemDate = itemDate.concat(
+            startDate.toLocaleString(dateRegion, dateFormat),
+            " - ",
+            !endDate ? "Aujourd'hui" : endDate.toLocaleString(dateRegion, dateFormat)
+        )
+    }
+
+    if (Object.keys(dates).length - 1 != index) itemDate = itemDate.concat(', ')
+})
+
 </script>
 
 <template>

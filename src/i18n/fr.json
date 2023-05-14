@@ -6,8 +6,9 @@
                 "title": "Développeur Full Stack",
                 "company": "OpenFly",
                 "location": "Guipavas",
-                "startDate": "2021-10",
-                "endDate": null,
+                "dates": {
+                    "0": {"start": "2021-10", "end": null}
+                },
                 "description": [
                     "Maintenance et développement du site et de l'application de l'entreprise",
                     "Utilisation de GitLab, Laravel, VueJS, MySQL"
@@ -17,8 +18,9 @@
                 "title": "Stage cybersécurité",
                 "company": "Harvest",
                 "location": "Paris",
-                "startDate": "2018-05",
-                "endDate": "2018-08",
+                "dates": {
+                    "0": {"start": "2018-05", "end": "2018-08"}
+                },
                 "description": [
                     "Proof of Concept sur l'intégration d'un Hardware Security Module aux applications de l'entreprise afin de renforcer leur sécurité",
                     "Élaboration d'un système serveur/client et chiffrement des données échangées",
@@ -33,9 +35,10 @@
             "applied-computing": {
                 "title": "Bachelor de Sciences en Informatique Appliquée",
                 "company": "Université de Dundee",
-                "location": "Dundee",
-                "startDate": "2015-09",
-                "endDate": "2020-06",
+                "location": "Ecosse",
+                "dates": {
+                    "0": {"start": "2015-09", "end": "2020-06"}
+                },
                 "description": [
                     "Agile Software Engineering",
                     "Networks and Data Communication",
@@ -53,15 +56,39 @@
                 "title": "Employé de marée",
                 "company": "Les Viviers Bretons",
                 "location": "Plouguerneau",
-                "multiDates": {
-                    "0": ["2019-07", "2019-08"],
-                    "1": ["2020-07", "2020-08"],
-                    "2": ["2021-07", "2021-08"]
+                "dates": {
+                    "0": {"start": "2019-07", "end": "2019-08"},
+                    "1": {"start": "2020-07", "end": "2020-08"},
+                    "2": {"start": "2021-07", "end": "2021-08"}
+                },
+                "description": [
+                    "Responsable de la vente au détail"
+                ]
+            },
+            "lab-tutor": {
+                "title": "Tuteur de travaux pratiques en informatique",
+                "company": "Université de Dundee",
+                "location": "Ecosse",
+                "dates": {
+                    "0": {"start": "2019-09", "end": "2019-12"}
                 },
                 "startDate": "2019-07",
                 "endDate": "2019-08",
                 "description": [
-                    "Responsable de la vente au détail"
+                    "Accompagnement des étudiants de 2ème année dans leurs travaux pratiques"
+                ]
+            },
+            "pr-officer": {
+                "title": "Responsable des relations publiques",
+                "company": "Association étudiante de l'Université de Dundee",
+                "location": "Ecosse",
+                "dates": {
+                    "0": {"start": "2019-09", "end": "2019-12"}
+                },
+                "startDate": "2019-07",
+                "endDate": "2019-08",
+                "description": [
+                    "Accompagnement des étudiants de 2ème année dans leurs travaux pratiques"
                 ]
             }
         }
