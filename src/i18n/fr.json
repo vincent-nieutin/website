@@ -1,6 +1,7 @@
 {
     "professional-experiences": {
         "title": "Expériences professionnelles",
+        "icon": "https://img.icons8.com/?size=2x&id=482&format=svg",
         "content": {
             "openfly": {
                 "title": "Développeur Full Stack",
@@ -31,6 +32,7 @@
     },
     "degrees": {
         "title": "Formations",
+        "icon": "https://img.icons8.com/?size=512&id=79387&format=png",
         "content": {
             "applied-computing": {
                 "title": "Bachelor de Sciences en Informatique Appliquée",
@@ -51,6 +53,7 @@
     },
     "low-jobs": {
         "title": "Emplois étudiants et saisonniers",
+        "icon": "https://img.icons8.com/?size=2x&id=482&format=svg",
         "content": {
             "employe-maree": {
                 "title": "Employé de marée",
