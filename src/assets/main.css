@@ -1,5 +1,9 @@
 @import './base.css';
 
+:root {
+  --main-color: rgb(55, 94, 223);
+}
+
 body {
   background-color: rgb(50, 50, 50);
 }

@@ -80,7 +80,7 @@ Object.keys(dates).forEach((key, index) => {
 }
 
 .title {
-    color: rgb(55, 94, 223);
+    color: var(--main-color);
     font-size: 22px;
     font-weight: bold;
 }
