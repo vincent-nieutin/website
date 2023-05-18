@@ -6,13 +6,15 @@ import briefcaseSVG from '@icons/briefcase.svg'
 </script>
 
 <template>
-  <div class="cv">
-    <div v-for="(key, index) in Object.keys($i18n.messages[$i18n.locale])">
-      <div class="category-header">
-        <Icon v-if="!!$i18n.messages[$i18n.locale][key].icon" :url="$i18n.messages[$i18n.locale][key].icon" />
-        <div class="category-title">{{ $i18n.messages[$i18n.locale][key].title.toUpperCase() }}</div>
+  <div class="cv-wrapper">
+    <div class="cv">
+      <div v-for="(key, index) in Object.keys($i18n.messages[$i18n.locale])">
+        <div class="category-header">
+          <Icon v-if="!!$i18n.messages[$i18n.locale][key].icon" :url="$i18n.messages[$i18n.locale][key].icon" />
+          <div class="category-title">{{ $i18n.messages[$i18n.locale][key].title.toUpperCase() }}</div>
+        </div>
+        <Item v-for="(item, index) in $i18n.messages[$i18n.locale][key].content" :item="item" />
       </div>
-      <Item v-for="(item, index) in $i18n.messages[$i18n.locale][key].content" :item="item" />
     </div>
   </div>
 </template>
@@ -49,7 +51,12 @@ import briefcaseSVG from '@icons/briefcase.svg'
     margin: 20px 0;
   }
 
+}
+
+.cv-wrapper {
+  
   width: 100%;
-  padding: 0 100px;
+  padding: 0 10%;
+  margin: 0 auto;
 }
 </style>

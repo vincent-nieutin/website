@@ -9,9 +9,9 @@ body {
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
 
   font-weight: normal;
   color: rgb(209, 209, 209);
