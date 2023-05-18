@@ -8,7 +8,10 @@
                 "company": "OpenFly",
                 "location": "Guipavas",
                 "dates": {
-                    "0": {"start": "2021-10", "end": null}
+                    "0": {
+                        "start": "2021-10",
+                        "end": null
+                    }
                 },
                 "description": [
                     "Maintenance et développement du site et de l'application de l'entreprise",
@@ -20,7 +23,10 @@
                 "company": "Harvest",
                 "location": "Paris",
                 "dates": {
-                    "0": {"start": "2018-05", "end": "2018-08"}
+                    "0": {
+                        "start": "2018-05",
+                        "end": "2018-08"
+                    }
                 },
                 "description": [
                     "Proof of Concept sur l'intégration d'un Hardware Security Module aux applications de l'entreprise afin de renforcer leur sécurité",
@@ -39,7 +45,10 @@
                 "company": "Université de Dundee",
                 "location": "Ecosse",
                 "dates": {
-                    "0": {"start": "2015-09", "end": "2020-06"}
+                    "0": {
+                        "start": "2015-09",
+                        "end": "2020-06"
+                    }
                 },
                 "description": [
                     "Agile Software Engineering",
@@ -60,9 +69,18 @@
                 "company": "Les Viviers Bretons",
                 "location": "Plouguerneau",
                 "dates": {
-                    "0": {"start": "2019-07", "end": "2019-08"},
-                    "1": {"start": "2020-07", "end": "2020-08"},
-                    "2": {"start": "2021-07", "end": "2021-08"}
+                    "0": {
+                        "start": "2019-07",
+                        "end": "2019-08"
+                    },
+                    "1": {
+                        "start": "2020-07",
+                        "end": "2020-08"
+                    },
+                    "2": {
+                        "start": "2021-07",
+                        "end": "2021-08"
+                    }
                 },
                 "description": [
                     "Responsable de la vente au détail"
@@ -73,7 +91,10 @@
                 "company": "Université de Dundee",
                 "location": "Ecosse",
                 "dates": {
-                    "0": {"start": "2019-09", "end": "2019-12"}
+                    "0": {
+                        "start": "2019-09",
+                        "end": "2019-12"
+                    }
                 },
                 "startDate": "2019-07",
                 "endDate": "2019-08",
@@ -86,12 +107,51 @@
                 "company": "Association étudiante de l'Université de Dundee",
                 "location": "Ecosse",
                 "dates": {
-                    "0": {"start": "2019-09", "end": "2019-12"}
+                    "0": {
+                        "start": "2019-09",
+                        "end": "2019-12"
+                    }
                 },
                 "startDate": "2019-07",
                 "endDate": "2019-08",
                 "description": [
                     "Accompagnement des étudiants de 2ème année dans leurs travaux pratiques"
+                ]
+            }
+        }
+    },
+    "skills": {
+        "title": "Compétences",
+        "icon": "https://img.icons8.com/?size=512&id=11151&format=svg",
+        "content": {
+            "misc": {
+                "description": [
+                    "Langues: anglais bilingue",
+                    "Programmation : maitrise avancée en Java, JavaScript, C#, HTML et CSS - bonne maitrise en Lua, C, C++, Python, SQL et PHP"
+                ]
+            }
+        }
+    },
+    "interests": {
+        "title": "Centres d'intérêt",
+        "icon": "https://img.icons8.com/?size=2x&id=20183&format=svg",
+        "content": {
+            "misc": {
+                "description": [
+                    "Aéronautique - BIA, 16 heures d'instruction en vol",
+                    "Randonnée, course à pied, natation, kitesurf"
+                ]
+            }
+        }
+    },
+    "other": {
+        "title": "Autres",
+        "icon": "https://img.icons8.com/?size=2x&id=24865&format=svg",
+        "content": {
+            "misc": {
+                "description": [
+                    "Baccalauréat Série Scientifique - Série Sciences de l’Ingénieur, Juin 2015",
+                    "Permis B, 2015"
                 ]
             }
         }

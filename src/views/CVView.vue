@@ -32,14 +32,6 @@ import briefcaseSVG from '@icons/briefcase.svg'
   align-items: center;
 
   margin: 10px 0 20px 0;
-
-  // &>:first-child {
-    
-  // }
-
-  // &>* {
-  //   margin: 0 10px;
-  // }
 }
 
 .cv {
@@ -48,7 +40,7 @@ import briefcaseSVG from '@icons/briefcase.svg'
   justify-content: center;
 
   &>* {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 
 }
