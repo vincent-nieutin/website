@@ -40,7 +40,7 @@ if (!!dates) {
             itemDate = itemDate.concat(
                 getFormatedDate(startDate),
                 " - ",
-                !endDate ? "Aujourd'hui" : getFormatedDate(endDate)
+                getFormatedDate(endDate)
             )
         }
 
