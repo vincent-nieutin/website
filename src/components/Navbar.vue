@@ -1,11 +1,12 @@
 <script setup>
-import NavButton from './NavButton.vue';
+import NavButton from './NavButton.vue'
 </script>
 
 <template>
     <div class="nav">
         <NavButton to="">Home</NavButton>
         <NavButton to="cv">C.V.</NavButton>
+        <div>{{  }}</div>
     </div>
 </template>
 

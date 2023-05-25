@@ -2,19 +2,19 @@
 import { reactive } from 'vue'
 import Item from '@/components/CV/Item.vue'
 import Icon from '@/components/Icon.vue'
-import briefcaseSVG from '@icons/briefcase.svg'
 </script>
 
 <template>
   <div class="cv-wrapper">
     <div class="cv">
-      <div v-for="(key, index) in Object.keys($i18n.messages[$i18n.locale])">
+      {{ $i18n }}
+      <!-- <div v-for="(key, index) in Object.keys($i18n.messages[$i18n.locale])">
         <div class="category-header">
           <Icon v-if="!!$i18n.messages[$i18n.locale][key].icon" :url="$i18n.messages[$i18n.locale][key].icon" />
           <div class="category-title">{{ $i18n.messages[$i18n.locale][key].title.toUpperCase() }}</div>
         </div>
         <Item v-for="(item, index) in $i18n.messages[$i18n.locale][key].content" :item="item" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
